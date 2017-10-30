@@ -58,13 +58,13 @@ about-page = about.md
 # The URL to the live, online notebook.  If you are using GitHub Pages, this
 # will be something like "https://yourlogin.github.io/yournotebook".
 
-notebook-url = https://mhucka.github.io/dcan
+notebook-url = https://mhucka.github.io/dcons
 
 # (Optional) The URL to the source repo for your notebook, if you want to show
 # this in the navigation bar.  This can be, for example, the GitHub repo URL.
 # Leave empty if the resource repo is not public.
 
-source-url = https://github.com/mhucka/dcan
+source-url = https://github.com/mhucka/dcons
 
 # The next variable determines where the formatted output is placed.  If you
 # use "docs" as the output directory, you will be able to use a convenient
