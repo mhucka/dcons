@@ -5,9 +5,20 @@ author:
 - <a href="http://www.cds.caltech.edu/~mhucka/">Michael Hucka</a>
 ---
 
+<!--
+
+to add:
+- ccn
+- add reading about acm ccn article, jacobson interview, irtf rfc's
+- jacobson quote about names being about where info was born
+
+
+-->
+
+
 # Introduction
 
-The network architecture that underlays today's Internet is largely based around the concept of moving packets of data from one explicitly identified host to another.  Internet Protocol (IP), the predominant networking protocol supporting the Internet, is concerned with addressing hosts and sending data packets between them&mdash;a point-to-point communications approach that made sense in the landscape of users and applications that existed in the 1970's. However, modern uses of the Internet have evolved from their origins, and today, content references and distribution make up the majority of internet traffic.  The best estimate in mid-2017 puts the number of visible web pages at nearly 50&nbsp;billion [@vandenbosch2016estimating], while in terms of data transmitted over the Internet, global IP traffic was estimated at 1.2&nbsp;zettabytes in 2016 and is predicted to reach 3.3 zettabytes per year by 2021, with IP video traffic estimated to comprise 82 percent of that [@cisco2017zettabyte].  "In such a content-centric worldview, what a person wants, rather than where it is located, is what matters most; content, rather than the server on which content resides, becomes the starting point" [@Kurose2014-ur].
+The network architecture that underlays today's Internet is largely based around the concept of moving packets of data from one explicitly identified host to another.  It was designed and developed at a time in history when most computers were stationary, limited in number, far in-between, and trusted each other.  Internet Protocol (IP), the predominant networking protocol supporting the Internet, is concerned with addressing hosts and sending data packets between them&mdash;a pairwise point-to-point communications approach that made sense in the landscape of users and applications that existed in the 1970's. However, modern uses of the Internet have evolved from their origins, and today, content references and distribution make up the majority of internet traffic.  The best estimate in mid-2017 puts the number of visible web pages at nearly 50&nbsp;billion [@vandenbosch2016estimating], while in terms of data transmitted over the Internet, global IP traffic was estimated at 1.2&nbsp;zettabytes in 2016 and is predicted to reach 3.3 zettabytes per year by 2021, with IP video traffic estimated to comprise 82 percent of that [@cisco2017zettabyte].  "In such a content-centric worldview, what a person wants, rather than where it is located, is what matters most; content, rather than the server on which content resides, becomes the starting point" [@Kurose2014-ur].
 
 The fact that most modern applications are not well matched to IP's host-oriented architecture was already apparent to network architects two decades ago.  This led to efforts by researchers and funding agencies to explore new architectural designs in the early 2000's.  One outcome of this work was the research on Content-Centric Networking [@Stanik2009-yu], which later led to the *Named Data Network* (NDN) project [@Jacobson2009-nt; @Jacobson2012-jc].
 
@@ -122,10 +133,12 @@ challenges...
 
 The following list of materials, in the order given here, may help readers become more familiar with NDN.
 
-1. Kurose's paper focuses on cache modeling, but the text through section 2.3 provides a nice, high-level summary of past network architectures and the architecture implied by NDN [@Kurose2014-ur].  
-2. Jacobson et al.'s 2012 CACM paper is slightly out of date with respect to the state of NDN today, but it is a good and concise explanation of all the essential elements of NDN [@Jacobson2012-jc].
-3. Saxena et al.'s 2016 paper is the most comprehensive survey of work in NDN so far [@Saxena2016-nf].  It gathers into one place a summary and references to work on all aspects of NDN, and provides helpful taxonomies of different areas of work.  (Note that the abstract may leave a poor impression, but the rest of the paper is considerably better.)
-4. The paper by Yu et al. explains in much better detail how security and trust are expected to work in NDN [@Yu2015-gz].
+1. Edens and Scott's 2017 article in IEEE Spectrum [@Edens2017-mx] is an excellent, non-technical and highly readable overview of content-centric networking.  Though the authors scarcely mention NDN by name, everything they describe is true of NDN.
+2. The survey by Xylomenos et al. [@Xylomenos2014-pp] is one of the best and most understandable, moderately-technical explanations of information-centric networking in general.  It covers several efforts including NDN, and while it is slightly dated (being published in 2014), it is still worth reading to understand the context of NDN.
+3. Jacobson et al.'s 2012 CACM paper is slightly out of date with respect to the state of NDN today, but it is a good and concise explanation of all the essential components of the NDN architecture [@Jacobson2012-jc].
+4. Saxena et al.'s 2016 paper is the most comprehensive survey of work on NDN so far [@Saxena2016-nf].  It gathers into one place a summary and references to work on all aspects of NDN, and provides helpful taxonomies of different areas of work.  (Note that the abstract may leave a poor impression about the quality of the writing, but the rest of the paper is considerably better.)
+5. The paper by Yu et al. explains in good detail how security and trust are expected to work in NDN [@Yu2015-gz].
+6. The IETF Internet Draft document [draft-rahman-icnrg-deployment-guidelines-00](https://tools.ietf.org/html/draft-irtf-icnrg-deployment-guidelines-00) from the Information-Centric Networking Research Group [@Rahman2018-al] provides the most up-to-date description of potential deployment scenarios for NDN.
 
 
 # References
