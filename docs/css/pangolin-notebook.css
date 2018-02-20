@@ -109,6 +109,14 @@ li.headline {
   margin-left: 25px;
 }
 
+.toc li {
+  margin-top: 0.5em;
+}
+
+.article-list.toc li {
+  margin-top: 1em;
+}
+
 h1#references {
   border-top: 1px solid #aaa;
   margin-top: 2em;
