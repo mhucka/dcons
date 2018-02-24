@@ -1,0 +1,3 @@
+[submodule "pangolin-notebook"]
+	path = pangolin-notebook
+	url = https://github.com/mhucka/pangolin-notebook.git
