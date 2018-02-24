@@ -1,0 +1,193 @@
+/*
+==============================================================================
+Description : Default styling for Pangolin Notebook
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: June 2014
+Source      : https://github.com/mhucka/pangolin-notebook
+==============================================================================
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:600");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #555;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.toc
+{
+  list-style-type: square;
+  margin-left: -2em;
+}
+
+#TOC
+{
+  display: none;
+}
+
+/* This is needed to make jumping to in-page anchors from the nav bar work
+   as expected.  Without this, the heading text appears underneath the nav bar. */
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  color: black;
+}
+
+h1.title {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: black;
+}
+
+h2.subtitle {
+  text-align: center;
+  margin-left: 4em;
+  margin-right: 4em;
+  color #555;
+  font-style: italic;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/* The default code font size looks oversized to my eyes. */
+pre, code {
+  font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: black;
+  background-color: #edf0ed;
+}
+
+h2, h3, h4 {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+ol li {
+  margin-top: 0.5em;
+}
+
+.dropdown-menu li a {
+  line-height: 1.2;
+}
+
+span.section-number {
+  margin-right: 1ex;
+}
+
+span.header-section-number {
+  margin-right: 1ex;
+}
+
+li.headline {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.main-toc li:not(.headline),
+.navbar-nav li:not(.headline) {
+  margin-left: 25px;
+}
+
+.toc li {
+  margin-top: 0.5em;
+}
+
+.article-list.toc li {
+  margin-top: 1em;
+}
+
+h1#references {
+  border-top: 1px solid #aaa;
+  margin-top: 2em;
+  padding-top: 0.5em;
+}
+
+.references span {
+  color: black;
+}
+
+/* Bootstrap's styling of <p> adds a 10px margin below, but it doesn't
+   define it for <center>.  This seems useful to make things more consistent.
+ */
+center {
+  margin-bottom: 10px;
+}
+
+/* Extra styles for the notebook.
+ */
+h3.date {
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+}
+
+.date:before {
+  content: "Last modified: ";
+}
+
+.date-tag {
+  clear: both;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.75;
+  color: #666666;
+}
+
+.authors {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.authors .author {
+  line-height: 0.5em;
+}
+
+.article-list {
+  margin-left: 2em;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: smaller;
+  font-color: #666666;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 1.5em;
+  text-align: justify;
+  /* The following doesn't work in Safari. */
+  text-align-last: center;
+  -moz-text-align-last: center;
+}
+
+figure {
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+figure img {
+  padding: auto auto 1em auto;
+}
