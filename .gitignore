@@ -8,7 +8,6 @@
 # Things specific to this directory.
 # .............................................................................
 
-_nav.html
 _toc.html
 
 # General Mac-specific things to ignore:
@@ -66,4 +65,4 @@ $RECYCLE.BIN/
 *~
 .\#*
 .git/COMMIT_EDITMSG
-/auto/
+auto
